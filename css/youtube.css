@@ -1,0 +1,38 @@
+@import url(style.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: black;  
+  height: 100vh;
+  display: grid;
+  /*grid 2c x 2filas */
+  grid-template-columns: 220px  1fr;
+  grid-template-rows: 56px  1fr;
+  grid-template-areas: 
+  'header header'
+  'sidebar content';
+  
+  
+}
+
+.header{
+    grid-area: header;
+    background-color: aliceblue;
+    border-bottom: 1px solid #c2c2cc;
+}
+.sidebar {
+    grid-area: sidebar;
+    border-right: 1px solid;
+    background-color: bisque;
+    
+}
+
+.content{
+    grid-area: content;
+    background-color: steelblue;
+}

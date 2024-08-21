@@ -1,0 +1,13 @@
+@import url(style.css);
+
+.grid-flujo{
+    display: grid;
+grid-template-columns: repeat(5 , 1fr);
+grid-template-rows: repeat(3 , 150px);
+grid-auto-flow: row;
+/* grid-auto-flow: column; */
+grid-auto-flow: 60px;
+grid-auto-columns: auto;
+grid-auto-columns: 180px;
+
+}
